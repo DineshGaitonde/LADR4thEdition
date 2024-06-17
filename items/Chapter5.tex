@@ -1,20 +1,31 @@
-\section*{Chapter 5}
+\section*{Chapter 5: Eigenvalues, Eigenvectors, and Invariant Subspaces}
 
-\subsection*{Exercises 5A}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Invariant Subspaces
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection*{Exercises 5A - Invariant Subspaces}
+
 
 \begin{problem}{1}
-Suppose $T \in \mathcal{L}(V)$ and $U$ is a subspace of $V$.
+Suppose $T\in\Hom(V)$ and $U$ is a subspace of $V$.
+\begin{enumerate}[(a)]
+\item Prove that if $U\subseteq \Null T$, then $U$ is invariant under $T$.
+\item Prove that if $\Range T\subseteq U$, then $U$ is invariant under $T$.
+\end{enumerate}
 \end{problem}
+\begin{proof}
 
-(a) Prove that if $U \subseteq null\ T$, then $U$ is invariant under $T$.
+\begin{enumerate}[(a)]
+\item Consider $u \in U$. $Tu = 0$. $0 \in U$. So $T(u) \in U$. Hence, $U$ is invariant under $T$.
+\item Consider $u \in U$. $T(u) \in range\ T \subseteq U$. Hence $T(u) \in U$. Hence $U$ is invariant under $T$.  \qedhere
+\end{enumerate}
 
-Consider $u \in U$. $Tu = 0$. $0 \in U$. So $T(u) \in U$. Hence, $U$ is invariant under $T$.
 
-(b) Prove that if $range\ T \subseteq U$, then $U$ is invariant under $T$.
-
-Consider $u \in U$. $T(u) \in range\ T \subseteq U$. Hence $T(u) \in U$. Hence $U$ is invariant under $T$.
+\end{proof}
 
 
 \begin{problem}{2}
-
+Suppose $T\in\Hom(V)$ and $V_1, \ldots V_m$ are invariant subspaces of $T$. Prove $V_1 + \ldots + V_m$ is invariant under $T$.
 \end{problem}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
