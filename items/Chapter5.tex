@@ -5,7 +5,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection*{Exercises 5A - Invariant Subspaces}
 
-
+%%%%% Problem 1
 \begin{problem}{1}
 Suppose $T\in\Hom(V)$ and $U$ is a subspace of $V$.
 \begin{enumerate}[(a)]
@@ -19,13 +19,28 @@ Suppose $T\in\Hom(V)$ and $U$ is a subspace of $V$.
 \item Consider $u \in U$. $Tu = 0$. $0 \in U$. So $T(u) \in U$. Hence, $U$ is invariant under $T$.
 \item Consider $u \in U$. $T(u) \in range\ T \subseteq U$. Hence $T(u) \in U$. Hence $U$ is invariant under $T$.  \qedhere
 \end{enumerate}
-
-
 \end{proof}
+%%%%%%%%%%%%%%%
 
-
+%%%%% Problem 2
 \begin{problem}{2}
 Suppose $T\in\Hom(V)$ and $V_1, \ldots V_m$ are invariant subspaces of $T$. Prove $V_1 + \ldots + V_m$ is invariant under $T$.
 \end{problem}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{proof}
+Consider an arbitrary element $v \in V_1 + \ldots + V_m$. It can be expressed as $v = v_1 + \ldots + v_m$, where $v_i \in V_i$.
+$T(v) = T(v_1 + \ldots + v_m) = T(v_1) + \ldots + T(v_m)$. Since $V_i$ is invariant under $T$, $T(v_i) \in V_i$. 
+Hence $T(v) \in V_1 + \ldots + V_m$ if $v \in V_1 + \ldots + V_m$.
+\end{proof}
+%%%%%%%%%%%%%%%
+
+%%%%% Problem 3
+\begin{problem}{3}
+Suppose $T\in\Hom(V)$. Prove that the intersection of every collection of subspaces of $V$ invariant under $T$ is invariant 
+under $T$.
+\end{problem}
+\begin{proof}
+Consider an arbitrary element $v$ in the intersection of the invariant subspaces ($(V_1, V_2, \ldots)$). Since each of the 
+subspaces are invariant, $T(v) \in V_i$. Hence $T(v) \in V_1 \cap V_2 \cap \ldots$. Hence intersection of invariant subspaces
+under some linear transformation is invariant.
+\end{proof}
+%%%%%%%%%%%%%%%
